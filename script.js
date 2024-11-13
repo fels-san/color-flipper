@@ -23,6 +23,13 @@ color.addEventListener("blur", function () {
   main.style["background-color"] = formatHexColor(value);
 });
 
+color.addEventListener("keydown", function (event) {
+  if (event.key == "Enter") {
+    color.blur();
+    event.preventDefault();
+  }
+});
+
 function formatHexColor(text) {
   return text.trim().toUpperCase();
 }
