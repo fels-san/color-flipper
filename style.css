@@ -149,6 +149,7 @@ main {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  transition: background-color 1s ease;
 }
 
 /*
@@ -157,7 +158,6 @@ Container
 ===============
 */
 main {
-  min-height: calc(100vh - 3rem);
   display: grid;
   place-items: center;
 }
